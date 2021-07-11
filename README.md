@@ -4,5 +4,5 @@ Find useful Git information in the Teams channel, Hermes-Internship General,
 General, Files section.
 
 
-Use ng serve to run the application
+Use npm run start to run the application
 And Ctrl C to close the application
