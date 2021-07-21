@@ -1,115 +1,87 @@
-//! #e63946 needs to be replaced with red-main and #f1faee needs to be replaced with white-main
-.menu
-    width: 100%
-    background-color: #e63946
-    display: flex
-    justify-content: center
+@import 'src/variables.sass'
 
-
-
-.menu li
+.content-menu li
     display: inline-block
-    background-color: #e63946
+    background-color: $red-main
     font-size: 25px
+    margin:0
     margin: 5px 10px
+
+.content-menu 
+    width: 100%
+    background-color: $red-main
+    display: flex
+    justify-content: flex-end
+    padding: 0.6rem 0 0.1rem
     
-
-.menu li a:link, a:visited, a:hover
-    color: #f1faee
+.content-menu li a:link, a:visited, a:hover 
     text-decoration: none
-
-  
+    color: $white-main
     
 .header-logo 
     height: 200px
     width: 100%
-    background-color: #f1faee 
+    background-color: $white-main
     text-align: center
     display: flex
     flex-direction: column
     align-items: center
-
-
+    position: absolute
+    margin-bottom: 20px
+    padding-bottom: 20px
+    
 .header-logo img
     height: 80%
     width: 100%vh
-    
 
 #button-center
     height: 20%
-    width: 18%
-    background-color: #e63946 
+    background-color: $red-main
     font-size: 27px
-    color: #f1faee
+    color: $white-main
     margin: 5px 10px
     border-radius: 20px
 
-.toggle-button
-    position: absolute
-    top: .75rem
-    left: .75rem
+label
     display: none
-    flex-direction: column
-    justify-content: space-between
-    width: 30px
-    height: 30px 
+
+#toggle 
+    display: none
 
 
-.toggle-button .bar
-    height: 3px
-    width: 100%
-    background-color: pink
-    border-radius: 10px
 
 @media screen and ( max-width: 600px )
-    .header-logo 
-        height:150px
-        background-color: #f1faee
+    .content-menu 
+        background-color: $white-main
+        display: none
 
-    .toggle-button
-        margin-left: 15px
-        margin-top: 15px
-        display: flex
-        color: grey
+    label
+        display: block
+        cursor: pointer
 
     .content-menu
-        display: none
-    
-
-    .menu ul
         width: 100%
-        display: flex
-        flex-direction: column
-        background-color: #f1faee
-    
+        display: none
 
-    .menu.active 
-        display: flex
+    .content-menu li
+        display: block
 
-    .menu
-        flex-direction: column
-        align-items: flex-start
+    #toggle:checked + .content-menu 
+        display: block
 
-    .menu li
-        color:black
+    .content-menu li 
+        background-color: $white-main
+        text-align: left
+        margin: 0px 5px
+        margin-top: 5px
+
+    .content-menu li a:link, a:visited, a:hover 
+        color: $black-main
         font-size: 18px
         text-decoration: underline
-        text-align: left
-        margin: 5px
+        text-decoration-color: $red-main
     
-    .header-logo img
-        height: 40%
-        width: 100%vh
-
     #button-center
-        color:#f1faee
         font-size: 23px
+        color: $white-main
         margin: 3px
-        border-radius: 20px
-        margin-bottom: 15px
-
-    
-    
-
-    
-//TO DO make toggle button display the menu using ts
