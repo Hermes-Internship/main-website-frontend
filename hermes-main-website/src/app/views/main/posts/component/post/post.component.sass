@@ -1,0 +1,54 @@
+@import 'src/variables.sass'
+    
+.container 
+    color: $white-main
+    position: relative
+
+.post
+    height: 200px
+    width: auto
+    margin: 30px
+    border: $red-main 3px solid
+    border-radius: 10px
+    display: inline-block
+    box-shadow: 5px 5px 2px grey
+
+.image
+    align-items: center
+    
+#picture
+    max-height:80px
+    width: auto
+    border-radius: 10px
+
+.text 
+    color: $black-main
+    font-size: 20px
+    margin: 5px 10%
+    max-height: 120px
+    overflow: hidden
+    text-overflow: ellipsis
+
+.data 
+    background-color: $red-main
+    color: $white-main
+    border-radius: 10px
+    font-size: 24px
+    width: max-content
+    padding: 15px
+    position: absolute
+
+@media screen and (max-width: 600px)
+    .post
+        height: 180px
+
+    #picture
+        max-height: 70px
+
+    .text
+        max-height: 100px
+    
+    .data
+        padding: 3px
+        font-size: 23px
+    
