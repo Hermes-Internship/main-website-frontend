@@ -1,0 +1,84 @@
+@import 'src/variables.sass'
+
+.content-menu li
+    display: inline-block
+    background-color: $red-main
+    font-size: 20px
+    margin: 5px 10px
+
+.content-menu 
+    width: 100%
+    background-color: $red-main
+    display: flex
+    justify-content: flex-end
+    
+.content-menu li a:link, a:visited, a:hover 
+    text-decoration: none
+    color: $white-main
+    
+.header-logo 
+    height: 200px
+    width: 100%
+    background-color: $white-main
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    margin-bottom: 20px
+    padding-bottom: 20px
+    
+.header-logo img
+    height: 80%
+
+#button-center
+    height: 20%
+    background-color: $red-main
+    font-size: 25px
+    color: $white-main
+    border-radius: 20px
+    border: none
+    padding: 3px 10px
+
+label
+    display: none
+
+#toggle 
+    display: none
+
+
+
+@media screen and ( max-width: 600px )
+    .content-menu 
+        background-color: $white-main
+        display: none
+
+    label
+        display: block
+        cursor: pointer
+
+    .content-menu
+        width: 100%
+        display: none
+
+    .content-menu li
+        display: block
+
+    #toggle:checked + .content-menu 
+        display: block
+
+    .content-menu li 
+        background-color: $white-main
+        text-align: left
+        margin: 5px 5px 0
+
+    .content-menu li a:link, a:visited, a:hover 
+        color: $black-main
+        font-size: 18px
+        text-decoration: underline
+        text-decoration-color: $red-main
+    
+    #button-center
+        font-size: 23px
+        color: $white-main
+        margin: 3px
