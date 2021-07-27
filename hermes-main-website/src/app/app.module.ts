@@ -13,6 +13,7 @@ import { PostComponent } from './views/main/posts/component/post/post.component'
     AppComponent,
     HeaderComponent,
     BannerComponent,
+    PostComponent,
     FooterComponent
   ],
   imports: [
