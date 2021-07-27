@@ -1,0 +1,100 @@
+
+@import "src/variables.sass"
+
+.container
+  width: 100%
+  position: absolute
+  bottom: 0
+  color: $white-main
+  background-color:$black-main
+ 
+.footer-row
+  display: flex
+  align-items: flex-start
+  justify-content: center
+
+.contacts
+  margin-top: 20px 
+  margin-bottom:  20px 
+  text-align: center
+  font-size: 30px
+
+.align-elements
+  display: flex
+  flex-direction: column
+  margin: 0 20px
+  width: 33%
+  
+.event
+  color: $white-main
+  text-align: center
+  margin-top: 20px
+  margin-bottom: 10px
+  font-size: 24px
+
+.footer-image
+  margin-bottom: 20px
+  background: #FFF
+  width: 20%
+  height: auto
+
+.footer-adress
+  font-size: 24px
+  margin: 0 0px
+  text-align: right
+  
+.footer-email
+  font-size: 24px
+  margin: 0 0px
+  text-align: center
+
+.footer-social
+   font-size: 24px
+   margin: 0 0px
+   text-align: left
+
+@media screen and ( max-width: 600px )
+    
+    .contacs
+      font-size: 19px
+      margin-bottom: 5px
+      margin-top: 5px
+      text-align:  center
+
+    .footer-row
+      flex-direction: column
+      justify-content: left
+      margin-left: 5%
+      margin-bottom: 5px
+
+    .footer-adress
+      font-size: 17px 
+      margin: 0 0px
+      text-align: left
+
+    .align-elements 
+      margin-bottom: 5px
+      margin-top: 5px
+      width: 100%
+   
+    .footer-email
+       font-size: 17px 
+       margin: 0 0px
+       text-align: left
+
+    .footer-social
+       font-size: 17px 
+       margin: 0 0px
+       text-align: left
+
+    .event
+      font-size: 17px
+      text-align: left
+      margin-left: 10%
+      margin-bottom: 5px
+      
+    .footer-image
+      width: 50%
+      height: auto
+      align-items: left
+      margin-right: 10%
