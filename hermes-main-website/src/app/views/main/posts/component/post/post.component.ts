@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -6,18 +6,19 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./post.component.sass']
 })
 export class PostComponent implements OnInit {
+
   @Input()
     data?:string
 
   @Input()
     imagine?:string
 
-    @Input()
+  @Input()
     text?:string
 
-  constructor() {
+  constructor() { 
     //
-   }
+  }
 
   ngOnInit(): void {
     //
