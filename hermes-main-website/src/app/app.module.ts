@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { PostComponent } from './views/main/posts/component/post/post.component';
 import { MainComponent } from './views/main/main/main.component';
+import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MainComponent } from './views/main/main/main.component';
     BannerComponent,
     PostComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    CdMemberComponent
   ],
   imports: [
     BrowserModule,
