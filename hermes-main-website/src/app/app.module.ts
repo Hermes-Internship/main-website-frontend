@@ -9,6 +9,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { PostComponent } from './views/main/posts/component/post/post.component';
 import { MainComponent } from './views/main/main/main.component';
 import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.component';
+import { CdComponent } from './views/cd/cd/cd.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.com
     PostComponent,
     FooterComponent,
     MainComponent,
-    CdMemberComponent
+    CdMemberComponent,
+    CdComponent
   ],
   imports: [
     BrowserModule,
