@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+//import { title } from 'process';
 
 @Component({
   selector: 'app-banner',
@@ -6,9 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.sass']
 })
 export class BannerComponent implements OnInit {
-
-  @Input()
-  title?:string;
+  
+  private _title?:string
 
   constructor() { 
     //
@@ -18,4 +18,15 @@ export class BannerComponent implements OnInit {
     //
   }
 
+  @Input()
+
+  public get title() {
+    return this._title || '';
+  }
+
+  public set title(str:string) {
+    this._title=str
+  }
+
 }
+

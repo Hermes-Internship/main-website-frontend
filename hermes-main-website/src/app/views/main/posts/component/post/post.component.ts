@@ -7,14 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  @Input()
-    data?:string
-
-  @Input()
-    imagine?:string
-
-  @Input()
-    text?:string
+  private _data?:string
+  private _imagine?:string
+  private _text?:string
 
   constructor() { 
     //
@@ -22,6 +17,30 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     //
+  }
+
+  public get data() {
+    return this._data || '';
+  }
+
+  public set data(str:string) {
+    this._data=str
+  }
+
+  public get imagine() {
+    return this._imagine || '';
+  }
+
+  public set imagine(str:string) {
+    this._imagine=str
+  }
+
+  public get text() {
+    return this._text || '';
+  }
+
+  public set text(str:string) {
+    this._text=str
   }
 
 }

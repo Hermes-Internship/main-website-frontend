@@ -11,7 +11,8 @@ import { ProjectsComponent } from './views/projects/projects/projects.component'
 import { CdComponent } from './views/cd/cd/cd.component';
 import { ContactComponent } from './views/contact/contact/contact.component';
 import { SidebarModule } from 'ng-sidebar';
-
+import { MainComponent } from './views/main/main/main.component';
+import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { SidebarModule } from 'ng-sidebar';
     FooterComponent,
     ProjectsComponent,
     CdComponent,
-    ContactComponent
+    ContactComponent,
+    MainComponent,
+    CdMemberComponent
   ],
   imports: [
     BrowserModule,
