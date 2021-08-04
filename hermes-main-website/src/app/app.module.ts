@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { PostComponent } from './views/main/posts/component/post/post.component';
 import { MainComponent } from './views/main/main/main.component';
+import { CdComponent } from './views/cd/cd.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { MainComponent } from './views/main/main/main.component';
     BannerComponent,
     PostComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    CdComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
