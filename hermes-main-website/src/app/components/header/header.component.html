@@ -1,6 +1,8 @@
+
+
 <div class="main-header">
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle">
+    <!-- <label for="toggle">&#9776;</label> -->
+    
 
     <div class="content-menu">
         <ul>
@@ -19,3 +21,33 @@
 </div>
 
 
+<ng-sidebar-container>
+  <ng-sidebar [opened]="opened">
+   
+    <ul class="menu">
+        <li><a routerLink="/">Despre noi</a></li>
+        <hr>
+        <li><a routerLink="/projects" routerLinkActive="active">Evenimente</a></li>
+        <hr>
+        <li><a routerLink="/cd" routerLinkActive="active">Consiliu Director & Departamente</a></li>
+        <hr>
+        <li><a href="#">Postări</a></li>
+        <hr>
+        <li><a routerLink='/contact'>Contact</a></li>
+        <hr>
+        <li><a href="https://www.cs.ubbcluj.ro/" target="_blank">Facultatea de Matematică și Informatică</a></li>
+      <hr>
+    </ul>
+    <button class="button-close-sidebar" (click)="toggleSidebar()"></button>
+    
+   
+  </ng-sidebar>
+  <div ng-sidebar-content>
+    <button class="button-menu" (click)="toggleSidebar()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+   
+  </div>
+</ng-sidebar-container> 

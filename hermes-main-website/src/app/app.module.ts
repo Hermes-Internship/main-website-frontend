@@ -10,6 +10,8 @@ import { PostComponent } from './views/main/posts/component/post/post.component'
 import { ProjectsComponent } from './views/projects/projects/projects.component';
 import { CdComponent } from './views/cd/cd/cd.component';
 import { ContactComponent } from './views/contact/contact/contact.component';
+import { SidebarModule } from 'ng-sidebar';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { ContactComponent } from './views/contact/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

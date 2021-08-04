@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
+  opened = false;
 
+ 
+  toggleSidebar() {
+    this.opened = !this.opened;
+  }
+
+  
   constructor() { 
     //
    }

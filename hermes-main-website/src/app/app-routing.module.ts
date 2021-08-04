@@ -6,18 +6,19 @@ import { ContactComponent } from './views/contact/contact/contact.component';
 
 
 const routes: Routes = [
-    {
-      path:"projects",
+   
+  {
+    path:"projects",
     component : ProjectsComponent
   },
   {
     path:"cd",
   component : CdComponent
-},
-{
+  },
+  {
   path:"contact",
 component : ContactComponent
-}
+  }
 ];
 
 @NgModule({
