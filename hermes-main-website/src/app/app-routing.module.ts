@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes,Router } from '@angular/router';
 import { ProjectsComponent } from './views/projects/projects/projects.component';
 import { CdComponent } from './views/cd/cd/cd.component';
 import { ContactComponent } from './views/contact/contact/contact.component';
 import { MainComponent } from './views/main/main/main.component';
-
 
 const routes: Routes = [
    {
@@ -36,7 +35,21 @@ component : ContactComponent
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,
+    {
+      anchorScrolling: 'enabled',
+      // onSameUrlNavigation: 'reload',
+      // enableTracing: true,
+      // scrollPositionRestoration: 'enabled',
+      useHash: true
+    }
+  )
+],
+
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+
+export class AppRoutingModule{ 
+  
+}
+

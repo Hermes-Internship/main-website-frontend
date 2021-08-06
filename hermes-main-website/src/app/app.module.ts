@@ -14,6 +14,9 @@ import { SidebarModule } from 'ng-sidebar';
 import { MainComponent } from './views/main/main/main.component';
 import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.component';
 
+import {MatInputModule} from "@angular/material/input"
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +33,12 @@ import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

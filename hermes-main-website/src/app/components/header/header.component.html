@@ -1,24 +1,5 @@
 
 
-<div class="main-header">
-    <!-- <label for="toggle">&#9776;</label> -->
-    
-
-    <div class="content-menu">
-        <ul>
-            <li><a routerLink="/">Despre noi</a></li>
-            <li><a routerLink="/projects" routerLinkActive="active">Evenimente</a></li>
-            <li><a routerLink="/cd" routerLinkActive="active">Consiliu Director & Departamente</a></li>
-            <li><a href="#">Postări</a></li>
-            <li><a routerLink='/contact'>Contact</a></li>
-            <li><a href="https://www.cs.ubbcluj.ro/" target="_blank">Facultatea de Matematică și Informatică</a></li>
-        </ul>
-    </div>
-    <div class="header-logo">
-        <img src="assets/hermes_logo-min.png" >
-        <button id="button-center">Înscrie-te la...</button>
-    </div>
-</div>
 
 
 <ng-sidebar-container>
@@ -38,8 +19,8 @@
         <li><a href="https://www.cs.ubbcluj.ro/" target="_blank">Facultatea de Matematică și Informatică</a></li>
       <hr>
     </ul>
-    <button class="button-close-sidebar" (click)="toggleSidebar()"></button>
     
+    <button class="button-close-sidebar" (click)="toggleSidebar() " ></button>
    
   </ng-sidebar>
   <div ng-sidebar-content>
@@ -51,3 +32,22 @@
    
   </div>
 </ng-sidebar-container> 
+<div class="main-header">
+    <!-- <label for="toggle">&#9776;</label> -->
+    
+
+    <div class="content-menu">
+        <ul>
+            <li><a routerLink="/">Despre noi</a></li>
+            <li><a routerLink="/projects" routerLinkActive="active">Evenimente</a></li>
+            <li><a routerLink="/cd" routerLinkActive="active">Consiliu Director & Departamente</a></li>
+            <li><a routerLink="." fragment="posts">Postări</a></li>
+            <li><a routerLink='/contact'>Contact</a></li>
+            <li><a href="https://www.cs.ubbcluj.ro/" target="_blank">Facultatea de Matematică și Informatică</a></li>
+        </ul>
+    </div>
+    <div class="header-logo">
+        <img src="assets/hermes_logo-min.png" >
+        <button id="button-center">Înscrie-te la...</button>
+    </div>
+</div>

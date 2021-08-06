@@ -1,0 +1,75 @@
+@import 'src/variables.sass'
+
+.inputs
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-around
+    margin-left: 10%
+    
+.input-email
+     border-bottom: 1px solid $red-main
+     border-top: none
+     border-left: none
+     border-right: none
+     width: 150%
+
+.input-subject
+       border-bottom: 1px solid $red-main  
+       border-top: none
+       border-left: none
+       border-right: none
+       width:150%
+
+.input-message
+    border-color: $red-main
+    width: 80%
+    height: 250px
+
+.personal-data
+    display: flex
+    flex-direction: column
+    margin-left: 10%
+
+
+
+.button-align
+    text-align: center
+
+.button
+    height: 15%
+    background-color: $red-main
+    font-size: 25px
+    color: $white-main
+    border-radius: 10px
+    margin-top: 5%
+
+.message
+    margin-right:10%
+    width:33%
+    
+   
+
+@media screen and ( max-width: 600px )
+    .header-logo img
+        width: 60%
+        align-items: center
+
+    .inputs
+        flex-direction: column
+
+    .message
+        align-items: left
+        margin-left: 7%
+        margin-right: 10%
+        width:100%
+
+    .input-message
+        width: 80%
+        height: 150px
+
+    .input-email
+        width:50%
+    
+    .input-subject
+        width: 50%
