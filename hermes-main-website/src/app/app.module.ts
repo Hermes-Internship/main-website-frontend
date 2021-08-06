@@ -12,11 +12,15 @@ import { CdComponent } from './views/cd/cd/cd.component';
 import { ContactComponent } from './views/contact/contact/contact.component';
 import { SidebarModule } from 'ng-sidebar';
 import { MainComponent } from './views/main/main/main.component';
+
+
+import { HttpClientModule } from '@angular/common/http';
 import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.component';
 import { EventComponent } from './views/projects/components/event/event.component';
 
 import {MatInputModule} from "@angular/material/input"
 import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -25,21 +29,21 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BannerComponent,
     PostComponent,
     FooterComponent,
+    CdComponent,
     ProjectsComponent,
     CdComponent,
     ContactComponent,
     MainComponent,
     CdMemberComponent,
-
-    CdComponent,
     EventComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     SidebarModule.forRoot(),
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

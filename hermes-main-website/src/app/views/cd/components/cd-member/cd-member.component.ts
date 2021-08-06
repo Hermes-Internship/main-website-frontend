@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { CdServiceService } from 'src/app/services/cd-service.service';
 import { Member } from 'src/assets/interfaces/member';
 
@@ -10,6 +11,7 @@ import { Member } from 'src/assets/interfaces/member';
 export class CdMemberComponent implements OnInit {
 
   @Input()
+
   private id?:number;
   private imagePath?:string;
   private facebookLink?: string;
@@ -29,6 +31,7 @@ export class CdMemberComponent implements OnInit {
 
   ngOnInit(): void {
     this.cdService.getMembers().subscribe((abc: Member[])=>{console.log(abc)})
+
   }
 
 }
