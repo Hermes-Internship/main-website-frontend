@@ -1,0 +1,60 @@
+@import 'src/variables.sass'
+    
+.container 
+    margin-top: 20px
+    position: relative
+    height: 180px
+    width: 175px
+    display: inline-block
+    text-align: center
+    position: relative
+    flex-direction: column
+
+#picture 
+    height: 100px
+    margin: 10px auto
+
+.logo-image
+    border: $red-main 3px solid
+    border-radius: 10px
+    height: 120px
+    position: relative
+    z-index: 1
+    margin: 20px auto
+    box-shadow: 5px 5px 2px grey
+
+.register, .date
+    margin-top: 10px
+    background-color: $red-main
+    color: $white-main
+    border-radius: 10px
+    font-size: 20px
+    width: max-content
+    padding: 10px
+    z-index: 2
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)  
+
+.register
+    bottom: 15px
+    text-decoration: none
+
+.date 
+    top: 0
+
+@media screen and ( max-width: 600px )
+    .container
+        width: 225px
+
+    #picture
+        height: 180px
+
+    .register, .date
+        font-size: 25px
+        padding: 3px 5px
+
+    .register
+        pointer-events: none
+        cursor: default
+    
