@@ -30,7 +30,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ContactComponent,
     MainComponent,
     CdMemberComponent,
-    EventComponent
+
+    CdComponent,
+    EventComponent,
   ],
   imports: [
     BrowserModule,
