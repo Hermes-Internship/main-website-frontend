@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
+  opened = false;
 
+ 
+  toggleSidebar() {
+    this.opened = !this.opened;
+  }
+
+  
   constructor() { 
     //
    }
@@ -14,6 +21,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     //
   }
-
+  scrollToElement($element : HTMLElement): void {
+    console.log($element);
+    $element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  }
   
 }
+
