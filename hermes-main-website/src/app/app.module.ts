@@ -10,6 +10,7 @@ import { PostComponent } from './views/main/posts/component/post/post.component'
 import { MainComponent } from './views/main/main/main.component';
 import { CdMemberComponent } from './views/cd/components/cd-member/cd-member.component';
 import { EventComponent } from './views/projects/components/event/event.component';
+import { CdComponent } from './views/cd/cd/cd.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EventComponent } from './views/projects/components/event/event.componen
     FooterComponent,
     MainComponent,
     CdMemberComponent,
-    EventComponent
+    EventComponent,
+    CdComponent
   ],
   imports: [
     BrowserModule,
